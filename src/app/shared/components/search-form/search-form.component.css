@@ -1,7 +1,7 @@
 fieldset#search {
   background: #f1f1f1;
   border: 0 none;
-  width: 110.25%;
+  width: 100%;
   border-bottom: 1px solid #ccc;
 }
 .inline {
@@ -10,17 +10,22 @@ fieldset#search {
 .left {
   display: flex;
   float: left;
-  margin-left: 133px;
+  margin-left: 100px;
 }
 .right {
   display: flex;
   float: left;
 }
-html,
-body {
-  height: 100%;
+#search #buttonBar .firstRight {
+  width: auto;
+  float: right;
+  margin-left: 2px;
+  text-align: left;
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Hervetica Nuee", sans-serif;
+
+#search #buttonBar .nextRight {
+  width: auto;
+  margin-right: 20px;
+  float: right;
+  text-align: left;
 }
