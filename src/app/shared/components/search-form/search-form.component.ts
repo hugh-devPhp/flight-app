@@ -9,6 +9,7 @@ import { NgxMaterialTimepickerModule, NgxMaterialTimepickerTheme } from 'ngx-mat
 import { MatButtonModule } from '@angular/material/button';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedService } from '../../services/shared.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-search-form',
@@ -24,10 +25,13 @@ import { SharedService } from '../../services/shared.service';
     MatNativeDateModule,
     NgxMaterialTimepickerModule,
     MatButtonModule,
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule,
+    CommonModule
   ],
 })
 export class SearchFormComponent {
+  showConnection = true;
+  showBack = true;
   searchFlightForm!: FormGroup;
   timeTheme: NgxMaterialTimepickerTheme = {
     container: {
@@ -61,5 +65,24 @@ export class SearchFormComponent {
     const searchFlightValues = this.searchFlightForm;
     console.log(searchFlightValues);
   }
+
+  selectedFlightType(value: string) {
+    if (value == 'Direct flight') {
+      this.showConnection = false;
+    }
+    else {
+      this.showConnection = true;
+    }
+  }
+
+  selectedTripType(value: string) {
+    if (value == 'One-Way ticket') {
+      this.showBack = false;
+    }
+    else {
+      this.showBack = true;
+    }
+  }
+
 
 }
