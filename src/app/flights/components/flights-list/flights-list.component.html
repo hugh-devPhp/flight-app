@@ -1,0 +1,11 @@
+<table mat-table [dataSource]="flights">
+    <ng-container matColumnDef="idFlight">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            No.
+        </th>
+        <td mat-cell *matCellDef let flight>
+            {{flight.idflight}}
+        </td>
+    </ng-container>
+    
+</table>
