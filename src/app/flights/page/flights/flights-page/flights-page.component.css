@@ -1,0 +1,9 @@
+#mainMargin {
+    margin-left: 125px;
+}
+#main {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-left: -97px;
+}

@@ -15,6 +15,14 @@ const ELEMENT_DATA: Flight[] = [{
 
   flightDuration: new Date(), connectionDuration: new Date(), aircraftType: 'Airbas',
 
+}, {
+  idFlight: 2, companyName: 'Air France', flightType: 'Direct flight', travelType: 'Round trip',
+
+  departureDate: new Date(), departureTime: new Date(), arrivaleDate: new Date(), arrivaleTime: new Date(),
+
+  backDate: new Date(), backTime: new Date(), departureLocation: 'Paris', arrivalLocation: 'London',
+
+  flightDuration: new Date(), connectionDuration: new Date(), aircraftType: 'Airbas',
 }]
 
 @Component({

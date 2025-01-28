@@ -6,6 +6,7 @@ import { EditComponent } from './post/edit/edit.component';
 import { IndexComponent } from './post/index/index.component';
 import { ViewComponent } from './post/view/view.component';
 import { FlightsListComponent } from './flights/components/flights-list/flights-list.component';
+import { FlightsPageComponent } from './flights/page/flights/flights-page/flights-page.component';
 
 export const routes: Routes = [
     { path: "search", component: SearchFormComponent },
@@ -14,7 +15,8 @@ export const routes: Routes = [
     { path: "post/create", component: CreateComponent },
     { path: "post/edit", component: EditComponent },
     { path: "post/:postId/index", component: IndexComponent },
-    { path: "post/:postId/view", component: ViewComponent }
+    { path: "post/:postId/view", component: ViewComponent },
+    { path: "flights", component: FlightsPageComponent },
 ];
 
 @NgModule({
